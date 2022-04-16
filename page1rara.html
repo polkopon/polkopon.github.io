@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./stylerara.css">
+    <link rel="stylesheet" href="./custom_styledada.css">
+    <link rel="shortcut icon" href="./img/favicorara.ico" type="img/x-icon">
+    <script src="./script/cdn.js"></script>
+    <script src="./script/customrara.js"></script>
+		<title>polkopon</title>
+
+	</head>
+	<body class="bg-white font-sans">
+
+        
+        <!--PRELOADER-->
+        <div id='preloader'>
+            <img src="./img/preloaderrara.gif" alt="preloader">
+        </div>
+
+        <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+            <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+              <div class="p-4 flex flex-row items-center justify-between">
+                <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">polkopon</a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                  <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
+              <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./index.html">Dom</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./privacypolicyrara.html">Polityka prywatności</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./contactushshs.html">Połącz się z nami</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./termsofcond.html">Terms of condition</a>  
+              </nav>
+            </div>
+          </div>
+
+
+            <div class="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3 py-5">
+                <div class="w-full rounded hover:shadow-2xl mx-auto">
+                    <img class="mx-auto" src="./img/game1.jpg"
+                        alt="image">
+                </div>
+                <div class="w-full rounded hover:opacity-50">
+                    <img class="mx-auto" src="./img/game2.jpg"
+                        alt="image">
+                </div>
+                <div class="w-full rounded hover:shadow-2xl">
+                    <img class="mx-auto" src="./img/game3.jpg"
+                        alt="image">
+                </div>
+            </div>
+
+          <div class="container w-full md:max-w-3xl mx-auto pt-20">
+
+            <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+        
+              <!--Title-->
+              <div class="font-sans">
+                <a href="./index.html" class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="./index.html" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Powrót do bloga</a></p>
+                    <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Bubble Shooter</h1>
+                    <p class="text-sm md:text-base font-normal text-gray-600">Opublikowane 2 godziny temu</p>
+              </div>
+        
+        
+              <!--Lead Para-->
+              <p class="py-6">Bubble Shooter 2022 to wciągająca strzelanka z ponad 600 łamigłówkami, dołącz do milionów teraz w najlepszej darmowej grze w strzelanie do bąbelków!</p>
+              <p class="py-6">Bubble Shooter 2022 to klasyczna gra polegająca na dopasowywaniu trzech elementów. Pop, stukaj i przechylaj swoją drogę przez ponad 600 wciągających łamigłówek wypełnionych ekscytacją i przygodą!</p>
+              <p class="py-6">Gdy wyskoczysz, nie możesz przestać! Bubble Shooter jest prosty, ale wciągająca! Przyjmuj wyzwania, klikaj i strzelaj! 💥💥 Pop bąbelki, 💥💥 pękaj kamienie, przebijaj się przez ścianę bąbelków i ciesz się niekończącymi się darmowymi strzałami! Satysfakcjonujące uczucie zwycięstwa jest zawsze obecne!</p>
+              <p class="py-6">TONY dobrych poziomów! Bubble Shooter Viking Pop to zaktualizowana klasyczna strzelanka do bąbelków. 💥💥 Ulepszona kolorowa rozgrywka z większą liczbą poziomów treningu mózgu! Bubble Shooter czeka na Twój skok!</p>
+              <p class="py-6">WIELKIE KARTY! NIESAMOWITY EFEKT! 💥💥 Delikatna atmosfera, 💥💥 Efekty 3D i pękający dźwięk niesamowitych bąbelków są idealne do całkowitego relaksu! Zrelaksuj się w tej zabawnej grze w trzaskanie bańkami w fantastycznym świecie baniek!</p>
+              <p class="py-6">Brak WiFi! Złap w biegu! 🏃‍♀️ Ciesz się Bubble Shooter offline, kiedy tylko chcesz i gdziekolwiek chcesz! 🤳 Pojawiły się nowe bąbelki jubilerskie, wspaniałe nowe dopalacze, kule ognia, dżiny i dopalacze bąbelków!</p>
+              <p class="py-6">Ta darmowa gra bąbelkowa jest do ściągnięcia za darmo, jest również odpowiednia dla rodziny i dzieci. Bubbles Shooter jest całkowicie darmowy, ale niektóre elementy w grze, takie jak dodatkowe ruchy lub życia, będą wymagały zapłaty.</p>
+              <p class="py-6">Zagraj w klasyczną i najbardziej wciągającą grę bąbelkową ZA DARMO, dopasuj 3 kolory i jasne poziomy. Nie przegap tej zabawnej, relaksującej gry! W tej dobrej starej wersji musisz celować i strzelać, aby upuścić i rozbić wszystkie bąbelki. Trenuj swój mózg w tej oryginalnej grze logicznej, strzelając piłeczkami online lub offline - w dowolnym momencie! Bubble Shooter™ to najbardziej wciągająca DARMOWA aplikacja dostępna w Google Play.</p>
+              <p class="py-6">Sprawdź swoje umiejętności strategiczne! Rywalizuj z przyjaciółmi i rodziną i zobacz, kto zdobędzie najwyższy wynik i zdobędzie 3 gwiazdki na każdym poziomie. Zarabiaj monety podczas gry i używaj ich, aby uzyskać fajne dopalacze. Wykorzystaj swoją logikę i umiejętności rozwiązywania łamigłówek, aby ukończyć misje i wyczyścić planszę, a także zbierać specjalne codzienne bonusy.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.superdna.magicBubbleShooter"><button type="button" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Pobierać</button></a>
+        
+        
+        
+          </div>
+        </div>
+
+
+        <footer class="bg-gray-600 py-8 md:py-16">
+
+          <div class="container max-w-screen-xl mx-auto px-4">
+
+              <div class="lg:flex flex-col md:flex-row text-center lg:text-left lg:justify-between">
+                  <div class="mb-10 lg:mb-0">
+  
+                      <p class="font-normal text-gray-400 text-md">Najlepsze gry w piłkę w Play Market</p>
+                  </div>
+
+                  <div class="space-y-4 mb-10 lg:mb-0">
+                      <h4 class="font-semibold text-gray-500 text-lg mb-6">Navegación rápida</h4>
+
+                      <a href="./index.html" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Dom</a>
+
+                      <a href="./privacypolicyrara.html" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Polityka prywatności</a>
+
+                      <a href="./contactushshs.html" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Połącz się z nami</a>
+
+                      <a href="./termsofcond.html" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Terms of condition</a>
+
+                  </div>
+
+                  <div class="space-y-4 mb-10 lg:mb-0">
+                      <h4 class="font-semibold text-gray-500 text-lg mb-6">Linki społeczne.</h4>
+
+                      <a href="https://twitter.com" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Twitter</a>
+
+                      <a href="https://facebook.com" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">facebook</a>
+
+                      <a href="https://youtube.com" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">youtube</a>
+                  </div>
+
+                  <div class="space-y-4">
+                      <h4 class="font-semibold text-gray-500 text-lg mb-6">Nasz adres</h4>
+
+                      <p class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">ul. Bukowska 27, 60-812, Poznań, Polska</p>
+
+                      <p class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">60 599 36 65</p>
+
+                      <p class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">info@polkopon.com</p>
+                  </div>
+              </div>
+
+              <hr class="text-gray-300 mt-10">
+
+              <p class="font-normal text-gray-400 text-md text-center mt-5">&copy; 2022 polkopon. All rights reserved.</p>
+
+          </div> <!-- container.// -->
+
+      </footer>
+  </div>
+
+
+
+                        
+                
+                    </body>
+                </html>
+                
